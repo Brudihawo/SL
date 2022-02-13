@@ -40,3 +40,17 @@ bool SL_begins_with(SL slice, SL begin);
 bool SL_ends_with(SL slice, SL end);
 bool SL_eq(SL a, SL b);
 ```
+
+## Documentation
+
+Documentation can be generated using
+
+```commandline
+$ make docs
+```
+for generating a pdf version of the docs, or
+```commandline
+$ doxygen
+```
+if you just want to run `doxygen` for creating a html documentation. Commands are to be
+run in the project root. Note that the documenation generation depends on `doxygen` and `latex` (only if you want to create pdf docs).

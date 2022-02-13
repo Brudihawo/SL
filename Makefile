@@ -10,7 +10,11 @@ test:
 compiledb:
 	compiledb make -Bnwk test
 
+docs:
+	doxygen && make -C docs/latex
+
 clean:
 	rm -vfr **/*.o
+	rm -vfr docs
 	rm -vfr *.o
 	rm -vf test

@@ -39,7 +39,7 @@ typedef struct {
 } SL;
 
 /** printf format string for SL (use together with SL_FP)*/
-#define SL_FMT "%s.*"
+#define SL_FMT "%.*s"
 
 /** printf SL processing for SL (use together with SL_FMT)*/
 #define SL_FP(sslice) sslice.len, sslice.start

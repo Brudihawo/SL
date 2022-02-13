@@ -52,8 +52,8 @@ typedef struct {
   (SL) { .start = content, .len = strlen(content) }
 
 /** New SL from Content and size for constant definition */
-#define SL_NWL(content, size)                                              \
-  { .start = content, .len = size }
+#define SL_NWL(content)                                              \
+  { .start = content, .len = sizeof(content) - 1 }
 
 /**
  * @brief Trim chars from an SL.
